@@ -9,8 +9,8 @@ create table dbo.sampledata
 
 
   insert dbo.sampledata(value_string, value_int, value_decimal)
-    values("1000.0000",1000, 1000.0000 )
+    values("1000,0000",1000, 1000.0000 )
   
  insert dbo.sampledata(value_string, value_int, value_decimal)
-    values("1000,0000",1000, 1000.0000 )
+    values("2000,0000",2000, 2000.0000 )
     

@@ -26,32 +26,4 @@ $env:Path += ";C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\B
 # & to signal we are running an external program
 &sqlcmd.exe -S tcp:sqltestteradata1.database.windows.net,1433 -d dbtest001 -U $sqladmin -P $sqlpass -i create-sample-data.sql
 
-
-
-#$connstring = ()
-
-# add linked services
-
- az datafactory linked-service create --factory-name $adf --properties @ls1.json --name $ls1 --resource-group $rg
-
-# az datafactory linked-service create --factory-name $adf --properties "{\"ty
-# pe\":\"AzureStorage\",\"typeProperties\":{\"connectionString\":{\"type\":\"SecureString\",\"
-# value\":\"DefaultEndpointsProtocol=https;AccountName=examplestorageaccount;AccountKey=<stora
-# ge key>\"}}}" --name $ls2 --resource-group $rg
-
-# add dataset
-
-# az datafactory dataset create --properties "{\"type\":\"AzureBlob\",\"linkedServiceName\":{\
-#     "type\":\"LinkedServiceReference\",\"referenceName\":\"exampleLinkedService\"},\"parameters\
-#     ":{\"MyFileName\":{\"type\":\"String\"},\"MyFolderPath\":{\"type\":\"String\"}},\"typeProper
-#     ties\":{\"format\":{\"type\":\"TextFormat\"},\"fileName\":{\"type\":\"Expression\",\"value\"
-#     :\"@dataset().MyFileName\"},\"folderPath\":{\"type\":\"Expression\",\"value\":\"@dataset().M
-#     yFolderPath\"}}}" --name $ds1 --factory-name $adf --resource-group $rg
-
-
-# az datafactory dataset create --properties "{\"type\":\"AzureBlob\",\"linkedServiceName\":{\
-#     "type\":\"LinkedServiceReference\",\"referenceName\":\"exampleLinkedService\"},\"parameters\
-#     ":{\"MyFileName\":{\"type\":\"String\"},\"MyFolderPath\":{\"type\":\"String\"}},\"typeProper
-#     ties\":{\"format\":{\"type\":\"TextFormat\"},\"fileName\":{\"type\":\"Expression\",\"value\"
-#     :\"@dataset().MyFileName\"},\"folderPath\":{\"type\":\"Expression\",\"value\":\"@dataset().MyFolderPath\"}}}" 
-#     --name $ds2 --factory-name $adf --resource-group $rg
+&sqlcmd.exe -S tcp:sqltestteradata1.database.windows.net,1433 -d dbtest002 -U $sqladmin -P $sqlpass -i create-dest-schema.sql
