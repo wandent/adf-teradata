@@ -1,0 +1,9 @@
+{
+	"name": "adf-teradata-test",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "43560e82-fbf1-4a04-83e4-51f2d9e1c897",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
