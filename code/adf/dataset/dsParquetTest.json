@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "dbo.sampledata.parquet",
+				"fileName": "es-cl-sampledata.parquet",
 				"fileSystem": "land"
 			},
 			"compressionCodec": "snappy"
@@ -23,16 +23,8 @@
 			{
 				"name": "value_decimal",
 				"type": "DECIMAL",
-				"precision": 14,
+				"precision": 38,
 				"scale": 4
-			},
-			{
-				"name": "value_string",
-				"type": "UTF8"
-			},
-			{
-				"name": "value_int",
-				"type": "INT32"
 			}
 		]
 	}
