@@ -25,7 +25,7 @@
 			},
 			{
 				"name": "value_decimal",
-				"type": "decimal"
+				"type": "String"
 			}
 		]
 	}

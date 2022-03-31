@@ -54,7 +54,7 @@
 							{
 								"source": {
 									"name": "value_decimal",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
