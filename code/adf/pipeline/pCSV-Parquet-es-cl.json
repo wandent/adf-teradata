@@ -68,7 +68,7 @@
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
 							"treatBooleanAsNumber": false,
-							"culture": "en-us"
+							"culture": "es-cl"
 						}
 					}
 				},
