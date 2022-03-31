@@ -1,0 +1,40 @@
+{
+	"name": "dsCSVTest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsdls1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.sampledata.csv",
+				"fileSystem": "land"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "value_decimal",
+				"type": "String"
+			},
+			{
+				"name": "value_string",
+				"type": "String"
+			},
+			{
+				"name": "value_int",
+				"type": "String"
+			}
+		]
+	}
+}
