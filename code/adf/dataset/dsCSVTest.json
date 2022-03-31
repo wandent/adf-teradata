@@ -13,7 +13,7 @@
 				"fileName": "dbo.sampledata.csv",
 				"fileSystem": "land"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "|",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
