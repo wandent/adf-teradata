@@ -1,0 +1,38 @@
+{
+	"name": "dsSampleDatadb1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lssql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "value_decimal",
+				"type": "decimal",
+				"precision": 14,
+				"scale": 4
+			},
+			{
+				"name": "value_string",
+				"type": "varchar"
+			},
+			{
+				"name": "value_int",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sampledata"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
