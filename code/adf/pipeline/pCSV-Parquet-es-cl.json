@@ -42,7 +42,7 @@
 							{
 								"source": {
 									"name": "id",
-									"type": "String",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -54,7 +54,7 @@
 							{
 								"source": {
 									"name": "value_decimal",
-									"type": "String",
+									"type": "Decimal",
 									"physicalType": "String"
 								},
 								"sink": {
