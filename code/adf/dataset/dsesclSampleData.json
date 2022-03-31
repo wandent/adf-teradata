@@ -1,0 +1,32 @@
+{
+	"name": "dsesclSampleData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsdls1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "es-cl-sampledata.csv",
+				"fileSystem": "land"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "value_decimal",
+				"type": "decimal"
+			}
+		]
+	}
+}
