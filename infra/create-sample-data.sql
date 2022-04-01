@@ -14,3 +14,6 @@ create table dbo.sampledata
  insert dbo.sampledata(value_string, value_int, value_decimal)
     values("2000,0000",2000, 2000.0000 )
     
+
+
+    

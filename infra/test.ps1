@@ -11,3 +11,9 @@ az sql server firewall-rule create -g $rg -s $sql -n myclient --start-ip-address
 
 &sqlcmd.exe -S tcp:sqltestteradata1.database.windows.net,1433 -d dbtest001 -U $sqladmin -P $sqlpass -i create-sample-data.sql
 &sqlcmd.exe -S tcp:sqltestteradata1.database.windows.net,1433 -d dbtest002 -U $sqladmin -P $sqlpass -i create-dest-schema.sql
+
+## New test
+# sql -> sql  - culture  -ok
+# sql -> parquet - culture
+# csv -> sql  - culture
+# csv -> parquet - culture
